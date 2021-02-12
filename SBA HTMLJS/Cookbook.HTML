@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookbook</title>
+</head>
+<body>
+
+  <style type="text/css">
+    body {
+      background: linear-gradient(to left bottom, #ff7f73, #ffc573);
+  background-size: 100% 100%;
+  color: white;
+  margin-left: 5%;
+      }
+
+    .h1
+    {
+
+      background-color:white;
+
+    }
+    .dropbtn {
+  background-color: #8a73ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 2px 2px white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffc573;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px white;
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ff7f73;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #8a73ff;}
+  
+
+  .IMGC{
+  width: 1100px;
+  height: 600px;
+  margin-left: 5%;
+
+
+  }
+  .image_containers1{
+
+      height: 400px;
+      width: 500px;
+      background-color: red;
+      margin-top: 2%;
+      float: left;
+
+  }
+
+
+  .nood{
+    position: relative;
+    height: 400px;
+    width:500px;
+    float: left;
+    box-shadow: 4px 4px white;
+  }
+  .nood1_caption{
+    position: relative;
+    height:100px;
+    width:500px;
+    background: linear-gradient(to left bottom, #8a73ff, #ff7f73);;
+    box-shadow: 4px 4px white;
+   margin-top: 80%;
+   text-align: center;
+  }
+  
+.image_containers2{
+
+      height: 400px;
+      width: 500px;
+      margin-top: 2%;
+      background: linear-gradient(to left bottom, #ffc573 , #ff7f73);
+     float: right; 
+     margin-right: 100px;
+     box-shadow: 4px 4px white;
+
+  }
+  .peepee{
+
+
+  }
+
+  .nood2_caption{
+    position: relative;
+    height:100px;
+    width:500px;
+    box-shadow: 4px 4px white;
+    background-color: #8a73ff ;
+   margin-top: 80%;
+   text-align: center;
+  } 
+  </style>
+      <h1 style= "font-family:verdana; color: white; text-shadow: 2px 2px #8a73ff"> Dollar Store Spoon University
+      <div class="dropdown">
+
+         <button class="dropbtn" style="font-family: verdana">Menu</button>
+          <div class="dropdown-content">
+            <a href="file:///Users/Lee/SBA%20HTMLJS/LOGINPAGE.html">Login</a>
+             <a href="file:///Users/Lee/SBA%20HTMLJS/MAINPAGE.html">Main Page</a>
+            <a href="file:///Users/Lee/SBA%20HTMLJS/Recipes.html">Recipes</a>
+            <a href="file:///Users/Lee/SBA%20HTMLJS/Cookbook.HTML">Cookbook</a>
+
+  </div>
+</div>
+</h1>
+<section class="IMGC">
+  
+
+ <div class="image_containers1">
+  <img class= "nood"src="https://images-na.ssl-images-amazon.com/images/I/A1Pcz6GPIJL.jpg" > 
+  <p class="nood1_caption" style="font-family: verdana;font-size: large; text-shadow: 1px 1px #ff7f73"> This book has been 22 years in the making. It is a New York Times Best Seller. It has a whopping 10 recipes, most of which you can find on Google.Purchase it today!  </p>
+      
+    </div>
+
+    
+      <div class="image_containers2">
+        <script type="text/javascript">
+           var clicks = 0;
+        function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;};
+        
+        </script>
+    
+          <button onClick="onClick()"style="width: 300px; height: 50px; font-family:verdana; font-size: 18px; color:#8a73ff ; box-shadow: 5px 5px 5px #ff7f73; margin-left: 20%; margin-top: 10%;">Purchase Cookbook Here</button><p style="font-family: verdana;margin-left: 20%;font-size: x-large; text-shadow: 2px 2px #8a73ff ">Cookbooks purchased: <a id="clicks">0</a></p>
+
+            <img style="height: 323px;width: 500px; box-shadow: 4px 4px white;"src="https://cdn.shopify.com/s/files/1/0417/0233/products/Cookbook_02.jpg?v=1595345581" > 
+          
+   </div>
+
+
+
+
+</div>
+</section>
+
+</body>
+</html>
