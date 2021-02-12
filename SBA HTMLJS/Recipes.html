@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="RecipesSBA.css">
+  <title>Recipes</title>
+</head>
+<body>
+
+ 
+      <h1 style= "font-family:verdana; color: white; text-shadow: 2px 2px #8a73ff"> Dollar Store Spoon University
+      <div class="dropdown">
+
+         <button class="dropbtn" style="font-family: verdana">Menu</button>
+          <div class="dropdown-content">
+             <a href="file:///Users/Lee/SBA%20HTMLJS/MAINPAGE.html">Main Page</a>
+            <a href="file:///Users/Lee/SBA%20HTMLJS/LOGINPAGE.html">Login</a>
+            <a href="file:///Users/Lee/SBA%20HTMLJS/Recipes.html">Recipes</a>
+            <a href="file:///Users/Lee/SBA%20HTMLJS/Cookbook.HTML">Cookbook</a>
+          
+  </div>
+</div>
+</h1>
+<h2 style="font-family: verdana; text-shadow: 2px 2px #8a73ff">Recipes</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Recipes" title="Type in a recipe">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%; color: #ff7f73; text-shadow: 1px 1px white;">Recipes</th>
+    <th style="width:40%; color: #ff7f73; text-shadow: 1px 1px white;">Difficulty Level</th>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;"><a href="https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/#tasty-recipes-17264">Instant Noodles</a></td>
+    <td style="text-shadow: 1px 1px black;">Easy(10-15 min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Chicken Pot Pie</td>
+    <td style="text-shadow: 1px 1px black;">Medium(30-45min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Filet Mignon</td>
+    <td style="text-shadow: 1px 1px black;">Difficult(15-20min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Souffle</td>
+    <td style="text-shadow: 1px 1px black;">Very Difficult(1 hour+)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Spicy Noodles</td>
+    <td style="text-shadow: 1px 1px black;">Easy(10-15min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Chocolate Cake</td>
+    <td style="text-shadow: 1px 1px black;">Medium(45min-1hour)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Tacos</td>
+    <td style="text-shadow: 1px 1px black;">Medium(20-30min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Avocado Toast</td>
+    <td style="text-shadow: 1px 1px black;">Very Easy(5-10min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Omelet</td>
+    <td style="text-shadow: 1px 1px black;">Very Easy(5-10min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Burger</td>
+    <td style="text-shadow: 1px 1px black;">Medium(15-25min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Cookies</td>
+    <td style="text-shadow: 1px 1px black;">Easy(30min-1hour)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Fried Rice</td>
+    <td style="text-shadow: 1px 1px black;">Easy(15-25min)</td>
+  </tr>
+  <tr>
+    <td style="text-shadow: 1px 1px black;">Croque Madam</td>
+    <td style="text-shadow: 1px 1px black;">Difficult(15-20min)</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
